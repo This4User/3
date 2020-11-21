@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header
+{
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    background-color: blue;
+    justify-content: space-between;
+    align-items: center;
+}
+input
+{
+    height: 20px;
+    width: 250px;;
+    margin-right:150px ;
+}
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 200px;
+    margin-left: 30px ;
+}
+a
+{
+    color: white;
+    font-size: 30px;
+}
+.top_zone
+{
+    height: 250px;
+    background: url("https://i.pinimg.com/originals/30/db/24/30db2442090512ff92eac1bdf372e49b.jpg");
+}
+.site_name
+{
+    color: white;
+    font-size: 50px;
+    padding-top: 50px;
+    padding-left: 40px;
+}
+.first_container,.second_container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+.first_content
+{
+    width: 200px;
+    height: 150px;
+    background-color: blue;
+}
+.second_content
+{
+    width: 160px;
+    height: 130px;
+    background-color: blue;
+}
+p
+{
+    margin-bottom: 10px;
+}
+@media(max-width: 960px){
+    .first_container,.second_container
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
+    header,.top_zone
+    {
+        width: 768px;
+    }
+    input
+    {
+        margin-left: 70px;
+        margin-right: 30px;
+    }
+    #first_content_2
+    {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .second_content
+    {
+        margin-left: 15px;
+    }
+}
+/* Первый адаптив */
+@media(max-width: 360px){
+    .first_container,.second_container
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 300px;
+    }
+    .first_content,.second_content
+    {
+        margin-bottom: 15px;
+    }
+    header,.top_zone
+    {
+        width: 360px;
+    }
+    input{
+        margin-left: 25px;
+        margin-right: 5px;
+        width: 135px;
+    }
+    a{
+        font-size: 25px;
+    }
+}
